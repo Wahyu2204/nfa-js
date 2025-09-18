@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 1 JS</title>
+</head>
+<body>
+    <div>
+        <h2>Perhitungan Luas Bangunan</h2>
+        <p id="PersegiPanjang">Persegi Panjang</p>
+        <p id="BujurSangkar">Bujur Sangkar</p>
+        <p id="Segitiga">Segitiga</p>
+    </div>
+
+    <script>
+        function luasPersegiPanjang(panjang, lebar) {
+            return panjang * lebar;
+        }
+
+        let panjang = 10;
+        let lebar = 5;
+
+        function luasBujurSangkar(sisi) {
+            return sisi * sisi;
+        }
+        let sisi = 4;
+
+        function luasSegitiga(alas, tinggi) {
+            return 0.5 * alas * tinggi;
+        }
+        let alas = 6;
+        let tinggi = 8;
+
+        document.getElementById("PersegiPanjang").innerHTML = "Luas Persegi Panjang dengan panjang " + panjang + " dan lebar " + lebar + " adalah " + luasPersegiPanjang(panjang, lebar);
+        document.getElementById("BujurSangkar").innerHTML = "Luas Bujur Sangkar dengan sisi " + sisi + " adalah " + luasBujurSangkar(sisi);
+        document.getElementById("Segitiga").innerHTML = "Luas Segitiga dengan alas " + alas + " dan tinggi " + tinggi + " adalah " + luasSegitiga(alas, tinggi);
+    </script>
+</body>
+</html>
