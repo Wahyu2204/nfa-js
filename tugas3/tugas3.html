@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 3 JS</title>
+</head>
+<body>
+    <h1>Manajemen Produk</h1>
+
+    <form id="form-tambah-produk">
+        <input type="text" id="nama-produk" placeholder="Nama Produk" required>
+        <input type="number" id="harga-produk" placeholder="Harga" required>
+        <input type="number" id="stok-produk" placeholder="Stok" required>
+        <button type="submit">Tambah</button>
+    </form>
+
+    <hr>
+
+    <h2>Daftar Produk</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nama</th>
+                <th>Harga</th>
+                <th>Stok</th>
+                <th>Aksi</th>
+            </tr>
+        </thead>
+        <tbody id="product-list-body">
+            </tbody>
+    </table>
+
+
+    <!-- JS External -->
+    <script src="tugas3.js"></script>
+</body>
+</html>
